@@ -1,6 +1,6 @@
-# simpleSlider 📸🎉
+# arkhSlider 📸🎉
 
-Welcome to **simpleSlider**! A simple, customizable, and responsive image slider for your website.
+Welcome to **arkhSlider**! A simple, customizable, and responsive image slider for your website.
 
 ## Features ✨
 
@@ -13,21 +13,21 @@ Welcome to **simpleSlider**! A simple, customizable, and responsive image slider
 
 ## Installation 📥
 
-Download the `simple-slider.js` file and include it in your project:
+Download the `arkh-slider.js` file and include it in your project:
 
 ```html
-<script src="path/to/simple-slider.js"></script>
+<script src="path/to/arkh-slider.js"></script>
 ```
 
 Or CDN:
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/simple-slider/simple-slider.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/arkh-slider.js"></script>
 ```
 
 CDN Minified: 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/simple-slider/simple-slider.min.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/arkh-slider.min.js"></script>
 ```
 
 ## Usage 🚀
@@ -43,7 +43,7 @@ Create a target element in your HTML where the slider will be applied:
 Then initialize the slider in your JavaScript:
 
 ```javascript
-function simpleSlider() {
+function arkhSlider() {
   return {
     target: ".target",
     itensToShow: 3,
@@ -66,7 +66,7 @@ function simpleSlider() {
 
 ## Configuration Options ⚙️
 
-You can customize the slider by modifying the `simpleSlider` function parameters:
+You can customize the slider by modifying the `arkhSlider` function parameters:
 
 - `target`: CSS selector for the slider container.
 - `itensToShow`: Number of items to show in the slider.
@@ -89,7 +89,7 @@ You can customize the slider by modifying the `simpleSlider` function parameters
 ```
 
 ```javascript
-function simpleSlider() {
+function arkhSlider() {
       return {
         target: ".target",
         itensToShow: 3,
