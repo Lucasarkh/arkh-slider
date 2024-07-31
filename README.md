@@ -19,10 +19,15 @@ Download the `arkh-slider.js` file and include it in your project:
 <script src="path/to/arkh-slider.js"></script>
 ```
 
-Or CDN
+Or CDN:
 
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/arkh-slider.js"></script>
+```
+
+CDN Minified: 
+```html
+<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/arkh-slider.min.js"></script>
 ```
 
 ## Usage 🚀
