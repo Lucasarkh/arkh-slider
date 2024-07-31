@@ -1,11 +1,11 @@
-const selector = () => document.querySelector(arkhSlider().target);
+const selector = () => document.querySelector(simpleSlider().target);
 function createSlider() {
-  const e = arkhSlider();
+  const e = simpleSlider();
   let t = { ...e };
   const n = () => {
       (t = window.matchMedia("(max-width: 767px)").matches ? { ...e, ...e.mobile } : { ...e }), c();
     },
-    l = document.querySelector(arkhSlider().target);
+    l = document.querySelector(simpleSlider().target);
   if (!l) return;
   const s = l.style;
   s.position = "relative";
