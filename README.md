@@ -1,6 +1,6 @@
-# ArkhSlider 📸🎉
+# arkhSlider 📸🎉
 
-Welcome to **ArkhSlider**! A simple, customizable, and responsive image slider for your website.
+Welcome to **arkhSlider**! A simple, customizable, and responsive image slider for your website.
 
 ## Features ✨
 
@@ -13,13 +13,13 @@ Welcome to **ArkhSlider**! A simple, customizable, and responsive image slider f
 
 ## Installation 📥
 
-Download the `arkhSlider.js` file and include it in your project:
+Download the `arkh-slider.js` file and include it in your project:
 
 ```html
-<script src="path/to/arkhSlider.js"></script>
+<script src="path/to/arkh-slider.js"></script>
 ```
 
-
+Or CDN
 
 ```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/script.js"></script>
