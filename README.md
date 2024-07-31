@@ -22,7 +22,7 @@ Download the `arkh-slider.js` file and include it in your project:
 Or CDN
 
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/script.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Lucasarkh/arkh-slider/arkh-slider.js"></script>
 ```
 
 ## Usage 🚀
