@@ -15,7 +15,7 @@ function createSlider() {
     i = !1,
     c = 0;
   const d = () => {
-    const { itensToShow: e, interval: l, infinite: d, autoplay: h, arrows: u, dots: y, draggable: p, stopOnHover: g, nav: f, navShow: m, scrollSlider: v } = t;
+    const { itensToShow: e, interval: l, infinite: d, autoplay: h, arrows: u, dots: y, draggable: p, stopOnHover: g, nav: f, navShow: v, scrollSlider: m } = t;
     if (((n.innerHTML = ""), s.forEach((e) => n.appendChild(e)), u)) {
       const t = createButton("❯", "absolute", "10px", "50%", "right"),
         l = createButton("❮", "absolute", "10px", "50%", "left");
@@ -80,7 +80,7 @@ function createSlider() {
       }
       w();
     };
-    v &&
+    m &&
       n.addEventListener("wheel", () => {
         event.preventDefault(), (a = event.deltaY > 0 ? (a - 1 + s.length) % s.length : (a + 1) % s.length), E();
       });
@@ -105,7 +105,7 @@ function createSlider() {
             x.appendChild(l);
         });
       const t = Array.from(x.children);
-      for (let e = 0; e < t.length; e++) t[e].style.width = 90 / m + "%";
+      for (let e = 0; e < t.length; e++) t[e].style.width = 90 / v + "%";
       x.style.display = "flex";
     }
     const w = () => {
@@ -122,7 +122,19 @@ function createSlider() {
         h &&
         (o && clearInterval(o),
         (o = setInterval(() => {
-          (d || a + e < s.length) && ((a = (a + 1) % s.length), E(), !d && a + e >= s.length && clearInterval(o));
+          if (d || a + e < s.length) {
+            (a = (a + 1) % s.length), E(), !d && a + e >= s.length && clearInterval(o);
+            Array.from(x.children).forEach((e) => {
+              e.addEventListener("click", () => {
+                o && clearInterval(o);
+              }),
+                s.forEach((e) => {
+                  e.addEventListener("click", () => {
+                    o && clearInterval(o);
+                  });
+                });
+            });
+          }
         }, l)),
         g &&
           (n.addEventListener("mouseover", () => {
