@@ -1,3 +1,4 @@
+
 # arkhSlider 📸🎉
 
 Welcome to **arkhSlider**! A simple, customizable, and responsive image slider for your website.
@@ -10,6 +11,9 @@ Welcome to **arkhSlider**! A simple, customizable, and responsive image slider f
 - **Navigation Arrows** ⬅️➡️
 - **Dots for Navigation** 🔵⚪
 - **Mobile Configuration** 📲
+- **Draggable Slides** 🖱️
+- **Scroll Slider Navigation** 🖱️📜
+- **Hover Stop** 🖱️✋
 
 ## Installation 📥
 
@@ -52,6 +56,11 @@ function arkhSlider() {
     autoplay: false,
     arrows: true,
     dots: true,
+    draggable: true,
+    scrollSlider: true,
+    stopOnHover: true,
+    nav: ".nav",
+    navShow: 3,
     mobile: {
       itensToShow: 1,
       interval: 3000,
@@ -59,6 +68,11 @@ function arkhSlider() {
       autoplay: true,
       arrows: true,
       dots: true,
+      draggable: true,
+      scrollSlider: true,
+      stopOnHover: true,
+      nav: ".nav",
+      navShow: 3,
     },
   };
 }
@@ -75,6 +89,11 @@ You can customize the slider by modifying the `arkhSlider` function parameters:
 - `autoplay`: Enable or disable autoplay.
 - `arrows`: Show or hide navigation arrows.
 - `dots`: Show or hide navigation dots.
+- `draggable`: Enable or disable draggable slides.
+- `scrollSlider`: Enable or disable scroll navigation.
+- `stopOnHover`: Enable or disable stopping autoplay on hover.
+- `nav`: CSS selector for navigation thumbnails.
+- `navShow`: Number of navigation thumbnails to show.
 - `mobile`: Configuration for mobile viewports.
 
 ## Example 💡
@@ -86,28 +105,41 @@ You can customize the slider by modifying the `arkhSlider` function parameters:
   <div><img src="image3.jpg" alt="Image 3" /></div>
   <div><img src="image4.jpg" alt="Image 4" /></div>
 </div>
+<div class="nav">
+  <!-- Navigation thumbnails will be added here -->
+</div>
 ```
 
 ```javascript
 function arkhSlider() {
-      return {
-        target: ".target",
-        itensToShow: 3,
-        interval: 2000,
-        infinite: true,
-        autoplay: false,
-        arrows: true,
-        dots: true,
-        mobile: {
-          itensToShow: 1,
-          interval: 3000,
-          infinite: false,
-          autoplay: true,
-          arrows: true,
-          dots: true,
-        },
-      }
-    };
+  return {
+    target: ".target",
+    itensToShow: 3,
+    interval: 2000,
+    infinite: true,
+    autoplay: false,
+    arrows: true,
+    dots: true,
+    draggable: true,
+    scrollSlider: true,
+    stopOnHover: true,
+    nav: ".nav",
+    navShow: 3,
+    mobile: {
+      itensToShow: 1,
+      interval: 3000,
+      infinite: false,
+      autoplay: true,
+      arrows: true,
+      dots: true,
+      draggable: true,
+      scrollSlider: true,
+      stopOnHover: true,
+      nav: ".nav",
+      navShow: 3,
+    },
+  };
+}
 ```
 
 ## Contribution 🤝
